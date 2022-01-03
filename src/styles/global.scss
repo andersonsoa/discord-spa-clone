@@ -29,3 +29,13 @@ button {
 h1 {
   font-weight: 700;
 }
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 50vh;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

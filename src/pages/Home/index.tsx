@@ -1,10 +1,14 @@
 import { MdDownload } from "react-icons/md";
 import { Hero } from "../../components/Hero";
 import { Section } from "../../components/Section";
+import { Footer } from "../../components/Footer";
 import { BgMain } from "../../components/BgMain";
 
 import featuredOne from "../../assets/featured-1.svg";
 import featuredTwo from "../../assets/featured-2.svg";
+import featuredThre from "../../assets/featured-3.svg";
+import featuredFour from "../../assets/featured-4.svg";
+import textBg from "../../assets/text-bg.svg";
 
 import "./styles.scss";
 
@@ -60,7 +64,7 @@ export const Home = () => {
 
       <Section>
         <div className="section-image">
-          <img src={featuredTwo} alt="featured-3" />
+          <img src={featuredThre} alt="featured-3" />
         </div>
 
         <div className="section-text">
@@ -71,6 +75,29 @@ export const Home = () => {
           </p>
         </div>
       </Section>
+
+      <Section>
+        <div className="section-full">
+          <h2>TECNOLOGIA DE CONEXÃO CONFIÁVEL</h2>
+
+          <p>
+            Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo, veja amigos
+            transmitirem a jogatina do dia ou junte uma galera pra desenhar na tela compartilhada.
+          </p>
+
+          <img src={featuredFour} alt="featured-4" />
+
+          <h3 style={{ backgroundImage: `url(${textBg})` }} className="get-ready">
+            Vamos começar sua jornada?
+          </h3>
+          <button className="btn download-variant">
+            <MdDownload size={24} />
+            Baixar para Windows
+          </button>
+        </div>
+      </Section>
+
+      <Footer />
     </>
   );
 };

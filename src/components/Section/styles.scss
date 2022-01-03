@@ -35,4 +35,49 @@
       color: #454548;
     }
   }
+
+  .section-full {
+    grid-column: span 12;
+
+    display: grid;
+    place-items: center;
+    gap: 30px;
+
+    h2 {
+      font-family: "Helvetica", sans-serif;
+      font-size: 3.6rem;
+      font-weight: 900;
+      line-height: 1;
+      text-align: center;
+    }
+
+    h3 {
+      font-family: "Helvetica", sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-top: 24px;
+      color: #454548;
+      text-align: center;
+    }
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+.get-ready {
+  display: block;
+  padding: 1rem 2rem;
+  background-position: 0 0;
+  background-size: contain;
 }
