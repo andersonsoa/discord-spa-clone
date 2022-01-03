@@ -73,6 +73,22 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 1200px) {
+    .section-image {
+      grid-column: span 12;
+      order: 1;
+    }
+
+    .section-text {
+      grid-column: span 12;
+      order: 2;
+    }
+
+    .section-full {
+      grid-column: span 12;
+    }
+  }
 }
 
 .get-ready {
