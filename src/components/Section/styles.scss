@@ -1,0 +1,38 @@
+.section-container {
+  max-width: var(--desktop-size);
+  width: 100%;
+  margin: 4rem auto;
+  padding: 0 20px;
+}
+
+.section-content {
+  padding: 36px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+
+  .section-image {
+    grid-column: span 8;
+  }
+
+  .section-text {
+    grid-column: span 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-top: 24px;
+      color: #454548;
+    }
+  }
+}
