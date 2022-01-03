@@ -1,3 +1,14 @@
+:root {
+  --clr-black: #23272a;
+  --clr-white: #fff;
+
+  --clr-pink-500: #de479c;
+  --clr-green-500: #50c4c8;
+  --clr-blue-500: #474feb;
+
+  --desktop-size: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +18,8 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  background: var(--clr-white);
+  color: var(--clr-black);
 }
 
 button {
