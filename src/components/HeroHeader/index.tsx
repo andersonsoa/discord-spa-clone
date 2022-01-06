@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 import { ReactComponent as DiscordLogo } from "../../assets/discord-logo.svg";
 
 import "./styles.scss";
@@ -12,8 +13,10 @@ export const HeroHeader = () => {
         </Link>
 
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">Sobre</Link>
+          <a href="https://github.com/andersonsoa/discord-spa-clone" target="_blank" rel="noreferrer">
+            <FaGithub size={20} />
+            Código Fonte
+          </a>
         </nav>
 
         <button>Abrir Discord</button>

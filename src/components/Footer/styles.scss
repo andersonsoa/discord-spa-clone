@@ -11,7 +11,8 @@
     .footer-links {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 20px;
+      column-gap: 20px;
+      row-gap: 20px;
       margin-bottom: 30px;
     }
 
@@ -96,6 +97,35 @@
       &:hover {
         text-decoration: underline;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-container {
+    .footer-content {
+      .footer-links {
+        column-gap: 20px;
+        row-gap: 80px;
+      }
+    }
+  }
+
+  .footer-info {
+    grid-column: span 12;
+  }
+  .footer-list-group {
+    grid-column: span 3;
+    font-size: 0.5rem;
+
+    h5 {
+      font-size: 0.789rem;
+    }
+
+    ul {
+      li {
+        font-size: 0.789rem;
       }
     }
   }

@@ -2,7 +2,10 @@ import { MdDownload } from "react-icons/md";
 import { Hero } from "../../components/Hero";
 import { Section } from "../../components/Section";
 import { Footer } from "../../components/Footer";
-import { BgMain } from "../../components/BgMain";
+
+import foregroundLeft from "../../assets/foreground-left.svg";
+import foregroundRight from "../../assets/foreground-right.svg";
+import foregroundClouds from "../../assets/clouds.svg";
 
 import featuredOne from "../../assets/featured-1.svg";
 import featuredTwo from "../../assets/featured-2.svg";
@@ -15,22 +18,30 @@ import "./styles.scss";
 export const Home = () => {
   return (
     <>
-      <Hero backgroundComponent={<BgMain />}>
-        <div className="container">
-          <div className="text-container">
-            <h1>IMAGINE UM LUGAR…</h1>
-            <p>
-              …onde você possa pertencer a um clube escolar, um grupo de gamers, ou uma comunidade artística mundial. Onde você e alguns
-              amigos possam passar um tempo juntos. Um lugar que torna fácil conversar todos os dias e socializar com mais frequência.
-            </p>
+      <Hero>
+        <div className="hero-body">
+          <div className="container">
+            <div className="text-container">
+              <h1>IMAGINE UM LUGAR…</h1>
+              <p>
+                …onde você possa pertencer a um clube escolar, um grupo de gamers, ou uma comunidade artística mundial. Onde você e alguns
+                amigos possam passar um tempo juntos. Um lugar que torna fácil conversar todos os dias e socializar com mais frequência.
+              </p>
+            </div>
+            <div className="action-container">
+              <button className="btn download">
+                <MdDownload size={24} />
+                Baixar para Windows
+              </button>
+              <button className="btn open">Abra o Discord no seu navegador</button>
+            </div>
           </div>
-          <div className="action-container">
-            <button className="btn download">
-              <MdDownload size={24} />
-              Baixar para Windows
-            </button>
-            <button className="btn open">Abra o Discord no seu navegador</button>
-          </div>
+        </div>
+
+        <div className="hero-background-image">
+          <img className="foreground-left" src={foregroundLeft} alt="foreground-left" />
+          <img className="foreground-right" src={foregroundRight} alt="foreground-right" />
+          <img className="foreground-clouds" src={foregroundClouds} alt="foreground-clouds" />
         </div>
       </Hero>
 

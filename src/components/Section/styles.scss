@@ -74,26 +74,58 @@
     }
   }
 
+  .get-ready {
+    display: block;
+    padding: 1rem 2rem;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
   @media (max-width: 1200px) {
     .section-image {
       grid-column: span 12;
       order: 1;
+
+      img {
+        width: 100%;
+      }
     }
 
     .section-text {
       grid-column: span 12;
       order: 2;
+
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.867rem;
+      }
     }
 
     .section-full {
       grid-column: span 12;
+
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.867rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      button {
+        font-size: 1rem;
+      }
     }
   }
-}
-
-.get-ready {
-  display: block;
-  padding: 1rem 2rem;
-  background-position: 0 0;
-  background-size: contain;
 }
